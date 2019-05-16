@@ -1,73 +1,43 @@
 /* global $ */
+var avengers_endgame = {
+        title: "Avengers: Endgame",
+        year: "2019",
+        length: "3h 2m",
+        image: "https://m.media-amazon.com/images/M/MV5BNzg4MjM2NDQ4MV5BMl5BanBnXkFtZTgwMzk3MTgyODE@._V1_SX300.jpg",
+        trailer: "https://www.youtube.com/watch?v=TcMBFSGVi1c"
+}
 
+var the_notebook = {
+        title: "The Notebook",
+        year: "2004",
+        length: "2h 4m",
+        image: "",
+        trailer: "https://www.youtube.com/watch?v=FC6biTjEyZw&t=1s"
+}
 
-var movies = [""];
+var the_shining = {
+        title: "The Shining",
+        year: "1980",
+        length: "2h 26m",
+        image: "",
+        trailer: "https://www.youtube.com/watch?v=S014oGZiSdI"
+}
 
-var images = [""];
-var directors = [""];
-var trailerlengths = [""];
-var links = [""];
+var bridesmaids = {
+        title: "Bridesmaids",
+        year: "2011",
+        length: "2h 12m",
+        image: "",
+        trailer: "https://www.youtube.com/watch?v=JgacDwgKiZg"
+}
 
+var list_of_movies = [avengers_endgame, the_notebook, the_shining, bridesmaids]
 
-    // BELOW Use forEach Loop to display the data from each of your array's in the correct div
 function displayMovieInfo(){
-movies.forEach(function(movie){
-    $("#movies").append("<p>" + movie + "</p>");
-});
-
-images.forEach(function(image){
-    $("#images").append("<img src='" + image + "'>");
-});
-
-directors.forEach(function(director){
-    $("#directors").append("<p>" + director + "</p>");
-});
-
-trailerlengths.forEach(function(length){
-    $("#lengths").append("<p>" + length + "</p>");
-});
-
-links.forEach(function(link){
-    $("#links").append("<a href='" + link + "'> Listen </a>");
+list_of_movies.forEach(function(movie){
+    $("#movies").append("<p>" + movie.title + "</p>");
 });
 
 }
-
-function emptyMovieInfo(){
-    $("#movies").empty();
-    // Use jQuery to empty all of the remaining divs
-    $("#images").empty();
-    $("#directors").empty();
-    $("#lengths").empty();
-    $("#links").empty();
-}
-
-
-function addMovieInfo(){
-    // BELOW write the code to add new items to each of the arrays.
-    $("#movies").add();
-    $("#images").add();
-    $("#directors").add();
-    $("#lengths").add();
-    $("#links").add();
-}
-
-$("#add").click(function() {
-    var movieN = $("#movie").val();
-    var imageU = $("#image").val();
-    var directorN = $("#director").val();
-    var trailerL = $("#length").val();
-    var link = $("#links").val();
-
-    movies.push(movieN);
-    directors.push(directorN);
-    images.push(imageU);
-    trailerlengths.push(trailerL);
-    links.push(link);
-    emptyMovieInfo();
-    addMovieInfo();
-    displayMovieInfo();
-});
 
 displayMovieInfo();
-
