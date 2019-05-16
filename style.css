@@ -1,0 +1,78 @@
+h1 {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+p{
+    font-family: 'Major Mono Display', monospace;
+}
+
+#cart {
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.column {
+    width: 18%;
+    padding: 25px 0px;
+}
+
+#images img {
+    display: block;
+    height: 100px;
+    width: auto;
+    margin: 20px;
+}
+
+#movies p {
+    font-size: 18px;
+    height: 100px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#directors p {
+    font-size: 18px;
+    height: 100px;
+    margin: 20px;
+}
+
+#lengths p {
+    font-size: 16px;
+    height: 100px;
+    margin: 20px;
+    text-align: right;
+}
+
+#links a {
+    display: block;
+    font-size: 18px;
+    height: 100px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#form {
+    width: 75%;
+    margin: 0 auto 20px auto;
+    font-size: 18px;
+}
+
+input {
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+body{
+    background-image: url("https://images.homedepot-static.com/productImages/3cd41d96-94c9-4660-b1c9-4a76e84f4e6a/svn/mirage-wallpaper-992-68341-64_1000.jpg");
+    background-color: pink;
+    
+}
