@@ -19,11 +19,8 @@ p{
     padding: 25px 0px;
 }
 
-#images img {
-    display: block;
-    height: 100px;
-    width: auto;
-    margin: 20px;
+#images img{
+    width: 10px;
 }
 
 #movies p {
@@ -33,7 +30,7 @@ p{
     margin: 20px;
 }
 
-#directors p {
+#years p {
     font-size: 18px;
     height: 100px;
     margin: 20px;
@@ -46,7 +43,7 @@ p{
     text-align: right;
 }
 
-#links a {
+#trailers a {
     display: block;
     font-size: 18px;
     height: 100px;
