@@ -36,8 +36,20 @@ var list_of_movies = [avengers_endgame, the_notebook, the_shining, bridesmaids]
 function displayMovieInfo(){
 list_of_movies.forEach(function(movie){
     $("#movies").append("<p>" + movie.title + "</p>");
+    $("#years").append("<p>" + movie.year + "</p>");
+    $("#lengths").append("<p>" + movie.length + "</p>");
+    $("#images").append("<img src='" + movie.image + "'>");
+    $("#trailers").append("<a href='" + movie.trailer + "'> Play </a>");
 });
     
+}
+
+function emptyMovieInfo(){
+    $("#movies").empty();
+    $("#images").empty();
+    $("#years").empty();
+    $("#lengths").empty();
+    $("#trailers").empty();
 }
 
 function addMovieInfo(){
@@ -60,6 +72,7 @@ $("#add").click(function() {
     list_of_movies.push(imageU);
     list_of_movies.push(movieL);
     list_of_movies.push(trailer);
+    emptyMovieInfo();
     addMovieInfo();
     displayMovieInfo();
 });

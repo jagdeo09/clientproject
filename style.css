@@ -20,7 +20,10 @@ p{
 }
 
 #images img{
-    width: 10px;
+    display: block;
+    height: 100px;
+    width: auto;
+    margin: 20px;
 }
 
 #movies p {
