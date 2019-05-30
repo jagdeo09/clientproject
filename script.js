@@ -66,12 +66,16 @@ $("#add").click(function() {
     var year = $("#year").val();
     var movieL = $("#length").val();
     var trailer = $("#trailer").val();
+    
+    var my_movie = {
+        title: movieN,
+        year: year,
+        length: movieL,
+        image: imageU,
+        trailer: trailer
+    }
 
-    list_of_movies.push(movieN);
-    list_of_movies.push(year);
-    list_of_movies.push(imageU);
-    list_of_movies.push(movieL);
-    list_of_movies.push(trailer);
+    list_of_movies.push(my_movie);
     emptyMovieInfo();
     addMovieInfo();
     displayMovieInfo();
@@ -79,17 +83,55 @@ $("#add").click(function() {
 
 displayMovieInfo();
 
-$("#search-button").click(function(){
 
-var searchInput = $("input").val();
-console.log(searchInput);
 
-  $.ajax({
-        url: "http://www.omdbapi.com/?i=tt3896198&apikey=a05a98fd",
-        method: "GET",
-        success: function(response){
-            console.log(response.data[0].images.fixed_width.url);
-  $("body").append("<img src=" + response.data[0].images.fixed_width.url + "/>");
-        }
-});
-});
+var moana = {
+        title: "Moana",
+        year: "2016",
+        length: "1h 53m",
+        image: "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg",
+        trailer: "https://www.youtube.com/watch?v=TcMBFSGVi1c"
+}
+
+var incredibles_two = {
+        title: "Incredibles 2",
+        year: "2018",
+        length: "2h 5m",
+        image: "https://images-na.ssl-images-amazon.com/images/I/51Td3Eetr5L.jpg",
+        trailer: "https://www.youtube.com/watch?v=FC6biTjEyZw&t=1s"
+}
+
+var grease = {
+        title: "Grease",
+        year: "1978",
+        length: "1h 51m",
+        image: "https://cdn.shopify.com/s/files/1/1057/4964/products/the-shining-vintage-movie-poster-original-1-sheet-27x41-6979.jpg?v=1535845561",
+        trailer: "https://www.youtube.com/watch?v=S014oGZiSdI"
+}
+
+var sixteen_candles = {
+        title: "16 Candles",
+        year: "1984",
+        length: "1h 33m",
+        image: "https://images-na.ssl-images-amazon.com/images/I/51YOA5yQKML.jpg",
+        trailer: "https://www.youtube.com/watch?v=JgacDwgKiZg"
+}
+
+var crazy_rich_asians = {
+        title: "Crazy Rich Asians",
+        year: "2018",
+        length: "2h 1m",
+        image: "https://images-na.ssl-images-amazon.com/images/I/51YOA5yQKML.jpg",
+        trailer: "https://www.youtube.com/watch?v=JgacDwgKiZg"
+}
+
+$("#random").click(function(){
+var potential_random_movies = [moana, incredibles_two, grease, sixteen_candles, crazy_rich_asians];
+
+var index_to_choose_from  = Math.floor(Math.random() * potential_random_movies.length)
+
+list_of_movies.push(potential_random_movies[index_to_choose_from])
+emptyMovieInfo();
+    addMovieInfo();
+    displayMovieInfo();
+});    
