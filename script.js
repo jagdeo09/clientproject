@@ -78,3 +78,18 @@ $("#add").click(function() {
 });
 
 displayMovieInfo();
+
+$("#search-button").click(function(){
+
+var searchInput = $("input").val();
+console.log(searchInput);
+
+  $.ajax({
+        url: "http://www.omdbapi.com/?i=tt3896198&apikey=a05a98fd",
+        method: "GET",
+        success: function(response){
+            console.log(response.data[0].images.fixed_width.url);
+  $("body").append("<img src=" + response.data[0].images.fixed_width.url + "/>");
+        }
+});
+});

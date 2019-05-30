@@ -10,8 +10,8 @@ p{
 #cart {
     display: flex;
     justify-content: center;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    border-top: 5px dotted black;
+    border-bottom: 5px dotted black;
 }
 
 .column {
