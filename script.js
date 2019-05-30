@@ -89,40 +89,40 @@ var moana = {
         title: "Moana",
         year: "2016",
         length: "1h 53m",
-        image: "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg",
-        trailer: "https://www.youtube.com/watch?v=TcMBFSGVi1c"
+        image: "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/Moana_Teaser_Poster.jpg/220px-Moana_Teaser_Poster.jpg",
+        trailer: "https://www.youtube.com/watch?v=LKFuXETZUsI"
 }
 
 var incredibles_two = {
         title: "Incredibles 2",
         year: "2018",
         length: "2h 5m",
-        image: "https://images-na.ssl-images-amazon.com/images/I/51Td3Eetr5L.jpg",
-        trailer: "https://www.youtube.com/watch?v=FC6biTjEyZw&t=1s"
+        image: "",
+        trailer: "https://www.youtube.com/watch?v=i5qOzqD9Rms"
 }
 
 var grease = {
         title: "Grease",
         year: "1978",
         length: "1h 51m",
-        image: "https://cdn.shopify.com/s/files/1/1057/4964/products/the-shining-vintage-movie-poster-original-1-sheet-27x41-6979.jpg?v=1535845561",
-        trailer: "https://www.youtube.com/watch?v=S014oGZiSdI"
+        image: "",
+        trailer: ""
 }
 
 var sixteen_candles = {
         title: "16 Candles",
         year: "1984",
         length: "1h 33m",
-        image: "https://images-na.ssl-images-amazon.com/images/I/51YOA5yQKML.jpg",
-        trailer: "https://www.youtube.com/watch?v=JgacDwgKiZg"
+        image: "",
+        trailer: ""
 }
 
 var crazy_rich_asians = {
         title: "Crazy Rich Asians",
         year: "2018",
         length: "2h 1m",
-        image: "https://images-na.ssl-images-amazon.com/images/I/51YOA5yQKML.jpg",
-        trailer: "https://www.youtube.com/watch?v=JgacDwgKiZg"
+        image: "",
+        trailer: ""
 }
 
 $("#random").click(function(){
